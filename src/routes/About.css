@@ -1,0 +1,104 @@
+.myself {
+    margin: 20px;
+    font-family: Georgia, serif;
+  }
+  
+  .myself h2, .myself h4, .myself p, .experience-container h1, .experience-container h3, .experience-container h4 {
+    margin: 10px 0;
+  }
+.myself h2{
+  color: plum;
+
+}
+.myself h4{
+  font-family: cursive;
+  color: lightpink;
+}
+  .myself p{
+    text-align: left;
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  .about-content h1{
+    color: plum;
+  }
+  
+  .about-content .experience-container {
+    display: flex;
+    gap: 20px; /* Adds space between the sections */
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+  }
+  
+  .exp1, .exp2 {
+    flex: 1; /* Ensures both sections take up equal space */
+    border: 1px solid #ddd; /* Adds a border for better visualization */
+    padding: 10px; /* Adds padding inside the sections */
+    min-width: 300px; /* Ensures minimum width for responsiveness */
+  }
+  
+  .exp1 ul{
+    list-style-type: disc;
+  }
+
+  .exp2 ul{
+    list-style-type: disc;
+  }
+   ul {
+    padding-left: 20px; /* Indent the list */
+  }
+  
+  ul li {
+    margin-bottom: 10px; /* Adds space between list items */
+  }
+  
+  .exp1{
+    border: 1.5px solid whitesmoke;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: rgba(16, 212, 215, 0.588);
+    border-radius: 10px;
+}
+
+.exp1 h4{
+  color: maroon;
+  font-style: italic;
+  padding-left: 5px;
+}
+
+.exp2{
+    border: 1.5px solid whitesmoke;
+    background-color: rgb(218, 143, 37) ;
+    border-radius: 10px;
+}
+
+.exp2 h4{
+  font-style: italic;
+  color: maroon;
+  padding-left: 7px;
+}
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .about-content .experience-container {
+    flex-direction: column; /* Stacks the sections vertically */
+    gap: 10px; /* Reduces gap between sections */
+  }
+  
+  .exp1, .exp2 {
+    min-width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .myself p {
+    font-size: 13px; /* Smaller font size for very small screens */
+  }
+  
+  .myself h2 {
+    font-size: 24px; /* Adjust heading size */
+  }
+  
+  .myself h4 {
+    font-size: 18px; /* Adjust subheading size */
+  }
+}
+  

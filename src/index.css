@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0; /* Remove default padding */
+  padding-top: 30px; /* Top padding for spacing, adjust if needed */
+  padding-left: 125px; /* Left padding as specified */
+  padding-right: 90px; /* Right padding as specified */
+  background-color: black;
+  color: aliceblue;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Allow main content to grow and fill available space */
+}
+
+/* Reset for specific elements if necessary */
+h1, h2, h3, h4, h5, h6, a, p, li {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding-left: 20px; /* Adjust padding for smaller screens */
+    padding-right: 20px;
+  }
+
+  .header {
+    padding-left: 0; /* Remove specific padding for the header if needed */
+    padding-right: 0;
+  }
 }

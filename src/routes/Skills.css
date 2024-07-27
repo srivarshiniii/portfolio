@@ -1,0 +1,91 @@
+/* SkillContainer.css */
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.skill-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  color: white; /* Default text color for consistency on black background */
+}
+
+.skill-container h3 {
+  margin-top: 10px;
+  color: #f0e68c; /* Different text color for better contrast */
+}
+
+.skill-container .re-container, 
+.skill-container .ht-container, 
+.skill-container .cs-container, 
+.skill-container .js-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.skill-container .re-container .icon, 
+.skill-container .ht-container .icon, 
+.skill-container .cs-container .icon, 
+.skill-container .js-container .icon {
+  background-color: #222; /* Darker background color for icons */
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 80px; /* Size of the icons */
+  color: #61dafb; /* Color for ReactJS icon */
+}
+
+.skill-container .ht-container .icon {
+  color: #e34c26; /* Color for HTML icon */
+}
+
+.skill-container .cs-container .icon {
+  color: #264de4; /* Color for CSS icon */
+}
+
+.skill-container .js-container .icon {
+  color: #f7df1e; /* Color for JavaScript icon */
+}
+
+/* Media Query for medium screens (2 rows x 2 columns) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skill-container div {
+    flex: 1 1 auto; /* Allow items to grow and shrink, but keep them in a row */
+    margin: 10px;
+  }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .skill-container div {
+    flex: 1 1 auto; /* Allow items to grow and shrink, but keep them in a row */
+    margin: 10px;
+  }
+}
+
+/* Media Query for very small screens */
+@media (max-width: 480px) {
+  .skill-container div {
+    flex: 1 1 auto; /* Allow items to grow and shrink, but keep them in a row */
+    padding: 10px;
+  }
+
+  .skill-container .re-container .icon, 
+  .skill-container .ht-container .icon, 
+  .skill-container .cs-container .icon, 
+  .skill-container .js-container .icon {
+    font-size: 60px; /* Adjust icon size for very small screens */
+    padding: 15px;
+  }
+}
+

@@ -1,0 +1,68 @@
+.box-home {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+    width: 100%;
+  }
+  
+  .image-section {
+    flex: 1; /* Allows the image section to grow and shrink as needed */
+    min-width: 300px; /* Ensures a minimum width for the image section */
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .text-section {
+    flex: 1; /* Allows the text section to grow and shrink as needed */
+    padding-top: 165px;
+    min-width: 300px; /* Ensures a minimum width for the text section */
+  }
+  
+  .text-section p {
+    text-align: left;
+  }
+  
+  .text-section h2 {
+    color: goldenrod;
+  }
+  
+  span {
+    color: rgb(226, 24, 98);
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .box-home {
+      flex-direction: column; /* Stacks the sections vertically */
+    }
+  
+    .text-section {
+      padding-top: 20px; /* Reduces padding for smaller screens */
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-section {
+      padding-top: 10px; /* Further reduces padding for very small screens */
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    p {
+      font-size: 18px; /* Smaller font size for very small screens */
+    }
+  
+    .text-section h2 {
+      font-size: 24px; /* Adjust heading size for very small screens */
+    }
+  }
+  

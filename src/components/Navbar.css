@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  color: rgb(236, 203, 153);
+
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin: 0 15px; /* Adjust space between menu items */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white; /* Adjust color as needed */
+  font-size: 25px; /* Adjust font size as needed */
+}
+
+.nav-menu a:hover {
+  color: aquamarine;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-menu {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .nav-menu li {
+      margin: 10px 0; /* Adjust spacing for vertical layout */
+  }
+}

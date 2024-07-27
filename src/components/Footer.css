@@ -1,0 +1,20 @@
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    padding: 0 1rem;
+}
+
+p{
+    text-align: center;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu li {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+}
